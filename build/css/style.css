@@ -228,7 +228,6 @@ body.dark {
 .home__inner {
   -webkit-transition: all 0.9s;
   transition: all 0.9s;
-  background-color: #2a373b;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -367,7 +366,7 @@ body.dark {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 150px;
-  margin-left: 32px;
+  margin-left: 76px;
 }
 
 .slider__prev,
