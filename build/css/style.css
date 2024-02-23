@@ -13,9 +13,14 @@ body,
 .victory__title-sub,
 .victory__title,
 .category__title,
-.modal__title,
 .modal .modal__title-sub,
-.loading__loading-text {
+.modal__title,
+.loading__loading-text,
+.loading__loading,
+.loading__title,
+.home__text-sub,
+.home__sub-title,
+.home__title {
   font-family: "Nunito-Bold";
   font-weight: 700;
 }
@@ -125,6 +130,22 @@ body.dark {
   100% {
     opacity: 1;
   }
+}
+
+@font-face {
+  font-family: "Nunito-Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Nunito-Regular"), url("../fonts/Nunito-Regular.woff2") format("woff2"), url("../fonts/Nunito-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito-Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Nunito-Bold"), url("../fonts/Nunito-Bold.woff2") format("woff2"), url("../fonts/Nunito-Bold.woff") format("woff");
+  font-display: swap;
 }
 
 .header {

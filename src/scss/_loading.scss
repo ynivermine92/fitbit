@@ -11,6 +11,7 @@
     display: none;
     font-size: 48px;
     margin-bottom: 25px;
+    @extend %nun-700;
   }
   &__title.active {
     animation: hideAnimationx 0.9s forwards;
@@ -28,6 +29,7 @@
     display: block;
   }
   &__loading {
+    @extend %nun-700;
     margin: 110px 0 106px 0px;
     width: 200px;
     height: 200px;

@@ -14,9 +14,11 @@
   }
   &__title {
     font-size: 64px;
+    @extend %nun-700;
   }
   &__sub-title {
     padding: 40px 0;
+    @extend %nun-700;
     font-size: 32px;
   }
   &__text {
@@ -40,6 +42,7 @@
     color: #f4f4f4;
   }
   &__text-sub {
+    @extend %nun-700;
     font-size: 20px;
     color: #f4f4f4;
     margin-left: 15px;

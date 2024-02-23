@@ -2,6 +2,8 @@
 @import "./vars";
 @import "./reset";
 @import "./global";
+@import "./fonts";
+
 
 // Sections or Pages SCSS-files imports
 @import "./header";
@@ -14,10 +16,11 @@
 
 
 body {
+  @extend %nun-700;
   background-image: url(../img/body/body.png);
   background-size: cover;
   background-repeat: no-repeat;
-  @extend %nun-700;
+  
   overflow: hidden;
   height: 100vh;
 }
