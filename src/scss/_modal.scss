@@ -47,7 +47,6 @@
   .modal {
     &__box {
       max-width: 122px;
-      padding-bottom: 35px;
     }
     .modal__title {
       font-size: 16x;
@@ -55,10 +54,11 @@
     }
     .modal__title-sub {
       text-align: center;
-      font-size: 16x;
+      font-size: 16px;
       padding-bottom: 20px;
     }
     .modal__text {
+      max-width: 300px;
       margin-top: 0px;
       color: rgb(244, 244, 244);
       font-size: 12px;

@@ -1741,7 +1741,6 @@ button.swiper-pagination-bullet {
   }
 
   .home__wrapper {
-    margin: 0 auto;
     padding-top: 30px;
     padding-bottom: 30px;
   }
@@ -1774,6 +1773,8 @@ button.swiper-pagination-bullet {
   .loading__title {
     font-size: 24px;
     text-align: center;
+    line-height: 1.37em;
+    margin-bottom: 22px;
   }
 }
 
@@ -1859,9 +1860,7 @@ button.swiper-pagination-bullet {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    padding-bottom: 18px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1875,14 +1874,13 @@ button.swiper-pagination-bullet {
   }
 
   .home__title {
-    text-align: center;
-    font-size: 25px;
-    margin-bottom: 30px;
+    font-size: 30px;
+    margin-bottom: 24px;
   }
 
   .home__sub-title {
-    font-size: 16px;
-    padding-bottom: 18px;
+    font-size: 18px;
+    padding-bottom: 12px;
     padding-top: 0px;
   }
 
@@ -1905,7 +1903,7 @@ button.swiper-pagination-bullet {
   }
 
   .home__content {
-    padding-top: 32px;
+    padding-top: 22px;
   }
 
   .home .home__mob-svgone {
@@ -1919,7 +1917,7 @@ button.swiper-pagination-bullet {
 
   .home__mob-svg {
     position: absolute;
-    height: 55px;
+    height: 80px;
   }
 
   .home__mob-svgtwo {
@@ -1938,7 +1936,7 @@ button.swiper-pagination-bullet {
   }
 
   .home__text {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .slider__images {
@@ -2007,7 +2005,11 @@ button.swiper-pagination-bullet {
 
   .loading__text {
     font-size: 12px;
-    padding-top: 10px;
+    margin-top: 0px;
+  }
+
+  .loading__text + .loading__text {
+    margin-top: 10px;
   }
 
   .loading__loading {
@@ -2018,7 +2020,6 @@ button.swiper-pagination-bullet {
 
   .modal__box {
     max-width: 122px;
-    padding-bottom: 35px;
   }
 
   .modal .modal__title {
@@ -2028,11 +2029,12 @@ button.swiper-pagination-bullet {
 
   .modal .modal__title-sub {
     text-align: center;
-    font-size: 16x;
+    font-size: 16px;
     padding-bottom: 20px;
   }
 
   .modal .modal__text {
+    max-width: 300px;
     margin-top: 0px;
     color: rgb(244, 244, 244);
     font-size: 12px;
