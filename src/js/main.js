@@ -152,7 +152,7 @@ const sliderThumbs = new Swiper('.slider__thumbs .swiper-container', {
     breakpoints: {
         0: {
             slidesPerView: 3,
-            spaceBetween: 0,
+            spaceBetween: 20,
         },
         767: {
             slidesPerView: 3,

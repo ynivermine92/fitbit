@@ -159,16 +159,16 @@ const sliderThumbs = new Swiper('.slider__thumbs .swiper-container', {
     slidesPerView: 3,
     spaceBetween: 40,
     loop: true,
-    autoplay: {
+/*     autoplay: {
         delay: 4000,
         disableOnInteraction: false
-    },
+    }, */
     allowTouchMove: false,
     initialSlide: 1,
     breakpoints: {
         0: {
             slidesPerView: 3,
-            spaceBetween: 0,
+            spaceBetween: 20,
         },
         767: {
             slidesPerView: 3,
@@ -182,9 +182,9 @@ const sliderImages = new Swiper('.slider__images .swiper-container', {
     slidesPerView: 1,
     spaceBetween: 20,
     loop: true,
-    autoplay: {
+ /*    autoplay: {
         delay: 4000,
-    },
+    }, */
     allowTouchMove: false,
     freeMode: true,
 
