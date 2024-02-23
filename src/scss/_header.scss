@@ -1,0 +1,76 @@
+// ========================= [ Header styles ] =========================
+.header {
+  display: block;
+  &.fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    
+  }
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.logo {
+  background: #000000;
+  a {
+    color: white;
+  }
+  img{
+
+    background-color: #0f1d21;
+  }
+
+}
+
+// ========================== [ Menu styles ] ==========================
+.menu {
+  display: flex;
+  gap: 30px;
+
+  // .menu__item
+  &__item {
+    display: flex;
+    position: relative;
+  }
+
+  // .menu__item-link
+  &__item-link {
+    color: white;
+    display: flex;
+    position: relative;
+    transition: 0.5s color;
+    &:after {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: -3px;
+      background: #131418;
+      height: 1px;
+      width: 100%;
+      transform: scale(0);
+      transition: 0.5s transform;
+
+      // Comment if you need border animation
+      display: none;
+    }
+  }
+  .menu__item-svg {
+    height: 21px;
+    width: 18px;
+    fill: transparent;
+    stroke: #132529;
+    &:hover {
+      stroke: #12b0b9;
+    }
+  }
+}
+
+.header.active{
+  display: none;
+}

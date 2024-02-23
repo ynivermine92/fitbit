@@ -1,0 +1,107 @@
+// Global SCSS-files imports
+@import "./vars";
+@import "./reset";
+@import "./global";
+
+// Sections or Pages SCSS-files imports
+@import "./header";
+@import "./home";
+@import "./loading";
+@import "./modal";
+@import "./category";
+@import "./victory";
+
+
+
+body {
+  background-image: url(../img/body/body.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  @extend %nun-700;
+  overflow: hidden;
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image: url(../img/body/body-mob.png);
+  }
+}
+
+
+
+.center-block {
+
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+
+
+
+}
+
+.home.remove {
+  animation: hideAnimation 0.9s forwards;
+  visibility: hidden;
+}
+
+
+.btn {
+  padding: 18px 36px;
+  margin-top: 35px;
+  color: rgb(19, 36, 41);
+  font-size: 18px;
+  @extend %nun-700;
+  border-radius: 40px;
+  background: rgb(18, 176, 185);
+  border: 1px solid transparent;
+  transition: all 0.9s;
+  &:hover {
+    color: rgb(244, 244, 244);
+    border: 1px solid rgb(18, 176, 185);
+    background-color: transparent;
+    transition: all 0.9s;
+  }
+}
+@keyframes hideAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes hideAnimationx {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+@keyframes loadingAnimation {
+  0% {
+    background-image: url("../img/loading/loading-1.png");
+  }
+  25% {
+    background-image: url("../img/loading/loading-2.png");
+  }
+  50% {
+    background-image: url("../img/loading/loading-3.png");
+  }
+  100% {
+    background-image: url("../img/loading/loading-4.png");
+  }
+}
+
+// Libs
+/* @import './libs/fancybox'; */
+@import "./libs/swiper";
