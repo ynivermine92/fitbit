@@ -595,6 +595,7 @@ body.dark {
 
 .modal__title {
   margin-top: 76px;
+  text-align: center;
   font-size: 20px;
 }
 
@@ -2018,31 +2019,42 @@ button.swiper-pagination-bullet {
     margin: 50px 0 50px 0;
   }
 
+  .modal__inner {
+    max-width: 300px;
+    text-align: center;
+  }
+
   .modal__box {
     max-width: 122px;
   }
 
-  .modal .modal__title {
+  .modal__title {
     font-size: 16x;
     margin-top: 35px;
+    width: 100%;
+    margin: 0 auto;
   }
 
-  .modal .modal__title-sub {
+  .modal__title-sub {
     text-align: center;
     font-size: 16px;
     padding-bottom: 20px;
   }
 
-  .modal .modal__text {
+  .modal__text {
     max-width: 300px;
-    margin-top: 0px;
+    margin-top: 10px;
     color: rgb(244, 244, 244);
     font-size: 12px;
     text-align: center;
   }
 
-  .modal .modal__text + .modal__text {
-    margin-top: 10px;
+  .modal .modal__text:nth-child(2n) {
+    margin-top: 20px;
+  }
+
+  .modal .modal__text:nth-child(3n) {
+    margin-top: 0px;
   }
 
   .category__items {
@@ -2050,7 +2062,7 @@ button.swiper-pagination-bullet {
   }
 
   .category__item {
-    max-width: 86px;
+    max-width: 89px;
     width: 100%;
     margin-top: 46px;
     cursor: pointer;
@@ -2064,8 +2076,10 @@ button.swiper-pagination-bullet {
   .category__text {
     font-size: 12px;
     text-align: center;
-    margin: 65px 0px;
-    padding: 0;
+    padding: 0px;
+    margin-top: 66px;
+    margin-bottom: 66px;
+    padding-bottom: 0px;
   }
 
   .category__btn {

@@ -18,6 +18,7 @@
   &__title {
     @extend %nun-700;
     margin-top: 76px;
+    text-align: center;
     font-size: 20px;
   }
   &__title,
@@ -45,27 +46,38 @@
 
 @media (max-width: 767px) {
   .modal {
+    &__inner{
+      max-width: 300px;
+      text-align: center;
+    }
     &__box {
       max-width: 122px;
     }
-    .modal__title {
+    &__title {
       font-size: 16x;
       margin-top: 35px;
+      width: 100%;
+      margin: 0 auto;
     }
-    .modal__title-sub {
+    &__title-sub {
       text-align: center;
       font-size: 16px;
       padding-bottom: 20px;
     }
-    .modal__text {
+    &__text {
       max-width: 300px;
-      margin-top: 0px;
+      margin-top: 10px;
       color: rgb(244, 244, 244);
       font-size: 12px;
       text-align: center;
     }
-    .modal__text + .modal__text {
-      margin-top: 10px;
+    .modal__text:nth-child(2n){
+      margin-top: 20px;
     }
+    .modal__text:nth-child(3n){
+      margin-top: 0px;
+    }
+
+   
   }
 }
