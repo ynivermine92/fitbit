@@ -147,7 +147,7 @@ const sliderThumbs = new Swiper('.slider__thumbs .swiper-container', {
         delay: 4000,
         disableOnInteraction: false
     },
-    allowTouchMove: false,
+   /*  allowTouchMove: false, */
     initialSlide: 1,
     breakpoints: {
         0: {
