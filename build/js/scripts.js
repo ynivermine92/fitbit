@@ -34,11 +34,6 @@ const homeBtn = () => {
     const header = document.querySelector('.header');
 
 
-
-
-
-
-
     btnMob.forEach((item) => {
         item.addEventListener('click', () => {
             sectionHome.classList.add('remove');

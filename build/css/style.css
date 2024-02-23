@@ -309,10 +309,9 @@ body.dark {
 }
 
 .home__item-svg:hover {
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
-  height: 64px;
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
   -webkit-transition: all 0.9s;
   transition: all 0.9s;
 }
