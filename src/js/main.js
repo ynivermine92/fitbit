@@ -59,7 +59,6 @@ const homeBtn = () => {
         victorySection.classList.remove('active')
         header.classList.remove('active')
         categorySection.classList.add('active')
-
     })
 
 
