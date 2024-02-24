@@ -2005,6 +2005,7 @@ button.swiper-pagination-bullet {
         -ms-flex-pack: center;
             justify-content: center;
     height: auto;
+    overflow: hidden;
   }
 
   .home .slider__col {
