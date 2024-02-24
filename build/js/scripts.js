@@ -53,9 +53,9 @@ const homeBtn = () => {
                                 header.classList.add('active')
                                 sectionloading.classList.remove('active');
                                 modalSection.classList.add('active')
-                              
 
-                                
+
+
                                 modalSection.addEventListener('transitionend', () => {
                                     if (!modalSection.classList.contains('active')) {
                                         header.classList.remove('active');
@@ -73,7 +73,9 @@ const homeBtn = () => {
 
     victoryBtn.addEventListener('click', () => {
         victorySection.classList.remove('active')
+        header.classList.remove('active')
         categorySection.classList.add('active')
+
     })
 
 
@@ -86,10 +88,14 @@ const homeBtn = () => {
             if (count === 0) {
                 setTimeout(() => {
                     categoryModal.classList.add('active');
+                    header.classList.add('active');
+
                 }, 500);
             } else {
                 categorySection.classList.remove('active')
                 victorySection.classList.add('active')
+                header.classList.add('active')
+      
             }
             count++
             if (count === 2) {
@@ -119,7 +125,7 @@ const homeBtn = () => {
                                 header.classList.add('active')
                                 sectionloading.classList.remove('active');
                                 modalSection.classList.add('active')
-                              
+
 
                                 modalSection.addEventListener('transitionend', () => {
                                     if (!modalSection.classList.contains('active')) {
@@ -141,6 +147,7 @@ const homeBtn = () => {
 
     categoryBtn.addEventListener('click', () => {
         categoryModal.classList.remove('active');
+        header.classList.remove('active');
 
         categoryItems.forEach(item => {
             const defaultImage = item.querySelector('.category__image');
@@ -163,7 +170,7 @@ const sliderThumbs = new Swiper('.slider__thumbs .swiper-container', {
         delay: 4000,
         disableOnInteraction: false
     },
-   /*  allowTouchMove: false, */
+    /*  allowTouchMove: false, */
     initialSlide: 1,
     breakpoints: {
         0: {

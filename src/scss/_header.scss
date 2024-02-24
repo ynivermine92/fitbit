@@ -1,13 +1,14 @@
 // ========================= [ Header styles ] =========================
 .header {
-  display: block;
+  animation: hideAnimationx 0.9s forwards;
+  position: relative;
+  z-index: 2;
   &.fixed {
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
     z-index: 2;
-    
   }
 }
 .navbar {
@@ -21,11 +22,9 @@
   a {
     color: white;
   }
-  img{
-
+  img {
     background-color: #0f1d21;
   }
-
 }
 
 // ========================== [ Menu styles ] ==========================
@@ -71,6 +70,7 @@
   }
 }
 
-.header.active{
-  display: none;
+.header.active {
+  animation: hideAnimation 0.9s forwards;
+  visibility: hidden;
 }
