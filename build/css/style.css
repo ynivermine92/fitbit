@@ -1758,21 +1758,32 @@ button.swiper-pagination-bullet {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1280px) {
+  .home__inner {
+    margin-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
   .home__wrapper {
     max-width: 400px;
   }
 
   .home__title {
-    font-size: 50px;
+    font-size: 45px;
   }
 
   .home__sub-title {
-    font-size: 28px;
+    font-size: 24px;
+    padding: 10px;
   }
 
   .home .home__content {
     max-width: 100%;
+    padding-top: 0;
   }
 
   .home .slider .swiper-container {
@@ -1790,6 +1801,71 @@ button.swiper-pagination-bullet {
     width: 52px;
     margin-left: 15px;
     overflow: hidden;
+  }
+
+  .home__text {
+    font-size: 12px;
+  }
+
+  .home .home__item-svg {
+    margin-top: 10px;
+  }
+
+  .home .slider {
+    height: 262px;
+  }
+
+  .loading .loading__loading {
+    margin: 30px 0px 30px 0px;
+    width: 120px;
+    height: 120px;
+  }
+
+  .loading .loading__text {
+    margin-top: 20px;
+  }
+
+  .loading .loading__title {
+    font-size: 32px;
+  }
+
+  .modal__title {
+    margin-top: 30px;
+  }
+
+  .modal__text {
+    margin-top: 20px;
+  }
+
+  .modal__box {
+    max-width: 200px;
+  }
+
+  .category__item {
+    margin-top: 30px;
+    width: 100px;
+  }
+
+  .category__text {
+    margin: 50px 0;
+    padding-bottom: 0px;
+  }
+
+  .victory__image {
+    max-width: 170px;
+  }
+
+  .victory__title {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+
+  .victory__title-sub {
+    margin: 15px 0;
+  }
+
+  .victory__text {
+    font-size: 14px;
   }
 }
 
@@ -1927,6 +2003,7 @@ button.swiper-pagination-bullet {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    height: auto;
   }
 
   .home .slider__col {
@@ -1939,21 +2016,21 @@ button.swiper-pagination-bullet {
             align-items: center;
     margin-right: 0;
     width: 100%;
-    margin-left: 34px;
+    margin-left: 20px;
   }
 
   .home .slider__images {
     width: 100%;
     height: auto;
-    min-width: 200px;
+    min-width: 160px;
   }
 
   .home .slider__thumbs {
     height: 100px;
     width: calc(100% - 96px);
     margin: 0 0px;
-    width: 50px;
-    height: 200px;
+    width: 40px;
+    height: 160px;
   }
 
   .home .slider__thumbs .swiper-container {
@@ -1967,7 +2044,7 @@ button.swiper-pagination-bullet {
   }
 
   .home .slider .swiper-container {
-    height: 200px !important;
+    height: 160px !important;
   }
 
   body {

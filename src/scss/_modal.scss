@@ -43,10 +43,22 @@
   animation: hideAnimationx 0.9s forwards;
   visibility: visible;
 }
-
+@media (max-width: 1280px) {
+  .modal {
+    &__title {
+      margin-top: 30px;
+    }
+    &__text {
+      margin-top: 20px;
+    }
+    &__box {
+      max-width: 200px;
+    }
+  }
+}
 @media (max-width: 767px) {
   .modal {
-    &__inner{
+    &__inner {
       max-width: 300px;
       text-align: center;
     }
@@ -71,13 +83,11 @@
       font-size: 12px;
       text-align: center;
     }
-    .modal__text:nth-child(2n){
+    .modal__text:nth-child(2n) {
       margin-top: 20px;
     }
-    .modal__text:nth-child(3n){
+    .modal__text:nth-child(3n) {
       margin-top: 0px;
     }
-
-   
   }
 }

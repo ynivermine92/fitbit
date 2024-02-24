@@ -17,7 +17,7 @@ const homeBtn = () => {
     const categoryItems = document.querySelectorAll('.category__item');
     const header = document.querySelector('.header');
 
-
+   
     btnMob.forEach((item) => {
         item.addEventListener('click', () => {
             sectionHome.classList.add('remove');
@@ -71,7 +71,10 @@ const homeBtn = () => {
             if (count === 0) {
                 setTimeout(() => {
                     categoryModal.classList.add('active');
-                    header.classList.add('active');
+                    if(categoryModal.classList.contains('active')){
+                        header.classList.add('active');
+
+                    }
 
                 }, 500);
             } else {
