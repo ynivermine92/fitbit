@@ -43,7 +43,7 @@
   animation: hideAnimationx 0.9s forwards;
   visibility: visible;
 }
-@media (min-width: 1280px) {
+@media (max-width: 1600px) {
   .modal {
     &__title {
       margin-top: 30px;
