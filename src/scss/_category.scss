@@ -74,7 +74,7 @@
   animation: hideAnimationx 0.9s forwards;
   visibility: visible;
 }
-@media (max-width: 1280px) {
+@media (min-width: 1280px) {
   .category {
     &__item{
       margin-top: 30px;
