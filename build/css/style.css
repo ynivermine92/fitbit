@@ -1724,7 +1724,7 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
-@media (max-width: 1900px) {
+@media (max-width: 1918px) {
   .logo img {
     width: 160px;
   }
@@ -1761,7 +1761,9 @@ button.swiper-pagination-bullet {
   .home .slider {
     height: 500px;
   }
+}
 
+@media (max-width: 1900px) {
   .category__item {
     margin-top: 30px;
     width: 200px;
@@ -1966,7 +1968,7 @@ button.swiper-pagination-bullet {
   .home__sub-title {
     font-size: 18px;
     padding-bottom: 12px;
-    padding-top: 0px;
+    padding-top: 145px;
   }
 
   .home__wrapper-mob {
